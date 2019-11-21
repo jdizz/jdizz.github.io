@@ -1,0 +1,38 @@
+.heart {
+    background-color: pink;
+    display: inline-block;
+    height: 30px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-45deg);
+    width: 30px;
+    animation: pulse 2s ease-out infinite;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+}
+
+.heart:before {
+    top:-15px;
+    left:0;
+}
+
+.heart:after {
+    left: 15px;
+    top: 0px;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(1);}
+}
