@@ -1,3 +1,13 @@
+.hi {
+    color: pink;
+    font-size: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -120px;
+    margin-left: -93px;
+}
+
 .heart {
     background-color: pink;
     display: inline-block;
